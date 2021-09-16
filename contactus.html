@@ -40,9 +40,9 @@
             <div class="collapse navbar-collapse" id="steelheadNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="menu.html"> Menu </a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"> Menu </a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"> About </a></li> 
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"> Contact </a></li>   
+                    <li class="nav-item active"><a class="nav-link" href="contactus.html"> Contact </a></li>   
                 </ul>
             </div>
             <span class="navbar-text ml-auto">
@@ -56,10 +56,8 @@
             <div class="col" id="breadCrumbInfo">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Menu</li>
+                    <li class="breadcrumb-item active">Contact Us</li>
                 </ol>
-               <h2>The Menu</h2>
-               <hr />
             </div>
         </div>
  
@@ -116,63 +114,69 @@
         </div>
     </div>
    
-    
-
-       <div class="container" id="menuContainer"> 
-            <div class="row row-content justify-content-center">
-                <div class="col">
-                    <h2 class= "text-center"><strong>Apps</strong></h2>
-                    <p class="border-bottom text-center">
-                        Shrimp Savoy – Sherry Cream | Parsley | Toasted Bread 18 <br><br>
-                        Oysters on the half Shell – West or East Coast | Champagne Mignonette | Cocktail 22 <br><br>
-                        White Fish Ceviche – Corn Tostadas | Sea Salt | Lime | Radish 16 <br><br>
-                        Baby Lobster Rolls served Cold – Buttered Brioche | Lemon | Garlic Aioli | Fries 20 <br><br>
-                        Jumbo Lump Crab Cakes – Roasted Fresno | Chives | Crispy Shallots | Lemon 20<br><br>
-                        Chickpea Bruschetta – Toasted Bread, Italian- style Tomato Salsa, Roasted Chickpeas, and EVOO 16<br><br>
-                        Blue & White Chips – Kettle cooked Chips | Gorgonzola | Roasted Tomatoes 16<br><br>
-                        Steak Tartar – Shallots | Egg | Chives | Potato Crisps 22<br><br>
-                    </p>
-                </div>
-            </div>
-            <div class="row row-content justify-content-center">
-                <div class="col">
-                    <h2 class= "text-center"><strong>Salads</strong></h2>
-                    <p class="border-bottom text-center"> Caesar Salad – Romaine | Parmesan | Anchovies 12 <br><br>
-                        Crab Louie – Louie Dressing | Old Bay | Jumbo Lump Crab | Cucumbers | Fresno Chilis 18 <br><br>
-                        House – Spring Mix | Gorgonzola | Chives | Chickpeas | Apples 12 <br><br>
-                    </p>
-                </div>
-            </div>
-            <div class="row row-content justify-content-center">
-                <div class="col">
-                    <h2 class= "text-center"><strong>From The Sea</strong></h2>
-                    <p class="border-bottom text-center"> Cedar Plank Salmon – Verlasso Salmon | Honey Dijon | Asparagus 34<br><br>
-                        Sea Bass Pontchatrain – Blackened Sea Bass | Shrimp | Crab | Lemon Herb Butter | Spinach 42<br><br>
-                        Red Snapper – Snapper Filets | Anchovy Hummus | Haricot Verts 38<br><br>
-                        Black Bass – Radish | Fingerlings | Asparagus 39<br><br>
-                        Salmon Tips – Salmon | Sherry Cream | Roasted Tomatoes | Asparagus | Penne 28<br><br>
-                        Lobster Pasta – Linguini | Lobster Claw | Lobster Meat | Heirloom Tomatoes 30<br><br> 
-                </div>
-            </div>
-            <div class="row row-content justify-content-center">
-                <div class="col">
-                    <h2 class= "text-center"><strong>Specialty Steaks</strong></h2>
-                    <p class= "border-bottom text-center"> The Sophia – 16 oz Creek Stone New York Strip | Fingerlings | Haricot Verts 44<br><br>
-                        The Lilly – 8 oz. Creek Stone Filet | Spinach | Fresno Puree 38<br><br>
-                    </p>
-                </div>
-            </div>
-            <div class="row row-content justify-content-center">
-                <div class="col">
-                    <h2 class= "text-center"><strong>A La Carte</strong></h2>
-                    <p class= "text-center"> Fingerlings | 12<br><br>
-                                            Creamed Spinach | 14<br><br>
-                                            Haricot Verts | 12<br><br>
-                                            French Fries | 10<br><br>
-                    </p>
-                </div>
-            </div>
+    <div class="row row-content" id="contactRow">
+        <div class="col-12">
+            <h2>Send us your Feedback</h2>
+            <hr />
         </div>
+        <div class="col-md-10">
+            <form>
+                <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                    </div>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col offset-md-2">
+                        May we contact you?
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                            <label for="contactYes" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                            <label for="contactNo" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-dark">Send Feedback</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+   </div>
+
+
     
             
 
