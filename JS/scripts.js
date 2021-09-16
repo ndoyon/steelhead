@@ -19,7 +19,7 @@
     });
 
     function checkScroll(){
-        var startY = $('.navbar').height() * 8; //The point where the navbar changes in px
+        var startY = $('.navbar').height() * 6; //The point where the navbar changes in px
     
         if($(window).scrollTop() > startY){
             $('.navbar').addClass("scrolled");

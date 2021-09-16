@@ -1,1 +1,167 @@
-git config --global user.email n.doyon184@gmail.com
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <title>Steelhead Menu</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class= "container" id="imgContainer">
+            <div class = "row row-content">
+                <div class="col align-self-center">
+                    <a href="index.html"><img  src="img/steelhead.png" class="mx-auto d-block img-fluid" alt="Steelhead logo"/></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">            
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#steelheadNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="steelheadNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="menu.html"> Menu </a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"> About Us </a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#"> Contact Us</a></li>   
+                </ul>
+            </div>
+            <span class="navbar-text ml-auto">
+                <a role="button" id="reserveButton"> Reservations
+                </a>
+            </span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class= "row">
+            <div class="col" id="breadCrumbInfo">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About Us</li>
+                </ol>
+            </div>
+        </div>
+ 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h3 class="modal-title">Reservations</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label"> Party Name </label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="partyName" name="partyName" placeholder="Party Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="numGuests">Number of Guests</label>
+                                    <div class="col" >
+                                        <select class="form-control" name="numGuests" id="numGuests">
+                                            <option value="1">Select...</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="4">3</option>
+                                            <option value="5">4</option>
+                                            <option value="6">5</option>
+                                            <option value="7">6</option>
+                                            <option value="8">6 or more</option>
+                                        </select>
+    
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="date"> Date </label>
+                                    <div class="col">
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                    </div>
+                                </div>
+                              
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="cancel" class="btn btn-secondary"> Cancel</button>
+                                        <button type="submit" class="btn btn-dark"> Submit </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+    
+
+       <div class="container"> 
+            <div class="row row-content justify-content-center">
+                <div class="col-10">
+                    <h2 class= "text-center"><strong>About Us</strong></h2>
+                    <p class="border-bottom text-center">
+                        Gerado is a well established concept General Manager in the Las Vegas and Miami areas. He has a tried and proven track record of achieving and maintaining finical stability and success. His teams in all his locations give him raving reviews. From his hands-on approach, connections with team members and guests, and love for amazing service are unrivaled. Gerado is bilingual and in fact an avid hunter and fishermen. G is extremely family oriented and treats his teams as family as well. He has success in restaurants across the Valley including Café Americano at Caesars grossing around 30 million dollars per year. 
+                        Chef Joe and Gerardo have a brilliant relationship working together at Café Americano inside the Paris. Where both were introduced and given a failing restaurant Café Il St Louis and asked to re-brand “Café Americano”. Withing two years (including a 3 month covid shut down) the teams with the leadership of G and Joe have reached the pinnacle as operators. Operating at 20% cogs on average and maintaining Labor percentages far below budget, they have turned an old dying restaurant into a young, vibrant, and thriving café grossing nearly 15 million per year. 
+                        Joe has an immense background in corporate restaurants including Landrys, Red Robin, and Outback. He has also managed much smaller boutique bars/restaurants in the Las Vegas Valley. More recently as Executive Chef for Bar Code Burger Bar; Chef Joe implemented Burgers of the Month, standards for the  teams and growth, and winning Las Vegas Weekly undercover Burger of the Year. Joe has worked for the Café Americano umbrella company for nearly 4 years, and in doing so formed a strong bond with Gerardo. Trained in traditional Italian through Chef Emery Childress, Joe brings a wide variety of techniques, cuisines, and structure to any kitchen in his possession. 
+                        Communication, service standards, and food quality are mainly what these two thrive on. Their guests are rarely disappointed in service or food, and at STEELHEAD American Seafood & Steak we can expect the same. Hands-on approach to service, the team, and the guests experiences will keep STEELHEAD growing for years to come. 
+                    </p>
+                </div>
+            </div>
+            
+    
+            
+
+    
+        <footer class = "site-footer border-top">
+            <div class="row align-self-center">
+                <div class="col-2 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                        <a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class = "col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-702-545-1234</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> cs@steelhead.com</a>
+                </div>
+            </div>
+        </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <title>Steelhead Menu</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class= "container" id="imgContainer">
+            <div class = "row row-content">
+                <div class="col align-self-center">
+                    <a href="index.html"><img  src="img/steelhead.png" class="mx-auto d-block img-fluid" alt="Steelhead logo"/></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">            
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#steelheadNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="steelheadNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="menu.html"> Menu </a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"> About Us </a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#"> Contact Us</a></li>   
+                </ul>
+            </div>
+            <span class="navbar-text ml-auto">
+                <a role="button" id="reserveButton"> Reservations
+                </a>
+            </span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class= "row">
+            <div class="col" id="breadCrumbInfo">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Menu</li>
+                </ol>
+               <h2>The Menu</h2>
+               <hr />
+            </div>
+        </div>
+ 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h3 class="modal-title">Reservations</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label"> Party Name </label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="partyName" name="partyName" placeholder="Party Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="numGuests">Number of Guests</label>
+                                    <div class="col" >
+                                        <select class="form-control" name="numGuests" id="numGuests">
+                                            <option value="1">Select...</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="4">3</option>
+                                            <option value="5">4</option>
+                                            <option value="6">5</option>
+                                            <option value="7">6</option>
+                                            <option value="8">6 or more</option>
+                                        </select>
+    
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="date"> Date </label>
+                                    <div class="col">
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                    </div>
+                                </div>
+                              
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="cancel" class="btn btn-secondary"> Cancel</button>
+                                        <button type="submit" class="btn btn-dark"> Submit </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+    
+
+       <div class="container" id="menuContainer"> 
+            <div class="row row-content justify-content-center">
+                <div class="col">
+                    <h2 class= "text-center"><strong>Apps</strong></h2>
+                    <p class="border-bottom text-center">
+                        Shrimp Savoy – Sherry Cream | Parsley | Toasted Bread 18 <br><br>
+                        Oysters on the half Shell – West or East Coast | Champagne Mignonette | Cocktail 22 <br><br>
+                        White Fish Ceviche – Corn Tostadas | Sea Salt | Lime | Radish 16 <br><br>
+                        Baby Lobster Rolls served Cold – Buttered Brioche | Lemon | Garlic Aioli | Fries 20 <br><br>
+                        Jumbo Lump Crab Cakes – Roasted Fresno | Chives | Crispy Shallots | Lemon 20<br><br>
+                        Chickpea Bruschetta – Toasted Bread, Italian- style Tomato Salsa, Roasted Chickpeas, and EVOO 16<br><br>
+                        Blue & White Chips – Kettle cooked Chips | Gorgonzola | Roasted Tomatoes 16<br><br>
+                        Steak Tartar – Shallots | Egg | Chives | Potato Crisps 22<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row row-content justify-content-center">
+                <div class="col">
+                    <h2 class= "text-center"><strong>Salads</strong></h2>
+                    <p class="border-bottom text-center"> Caesar Salad – Romaine | Parmesan | Anchovies 12 <br><br>
+                        Crab Louie – Louie Dressing | Old Bay | Jumbo Lump Crab | Cucumbers | Fresno Chilis 18 <br><br>
+                        House – Spring Mix | Gorgonzola | Chives | Chickpeas | Apples 12 <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row row-content justify-content-center">
+                <div class="col">
+                    <h2 class= "text-center"><strong>From The Sea</strong></h2>
+                    <p class="border-bottom text-center"> Cedar Plank Salmon – Verlasso Salmon | Honey Dijon | Asparagus 34<br><br>
+                        Sea Bass Pontchatrain – Blackened Sea Bass | Shrimp | Crab | Lemon Herb Butter | Spinach 42<br><br>
+                        Red Snapper – Snapper Filets | Anchovy Hummus | Haricot Verts 38<br><br>
+                        Black Bass – Radish | Fingerlings | Asparagus 39<br><br>
+                        Salmon Tips – Salmon | Sherry Cream | Roasted Tomatoes | Asparagus | Penne 28<br><br>
+                        Lobster Pasta – Linguini | Lobster Claw | Lobster Meat | Heirloom Tomatoes 30<br><br> 
+                </div>
+            </div>
+            <div class="row row-content justify-content-center">
+                <div class="col">
+                    <h2 class= "text-center"><strong>Specialty Steaks</strong></h2>
+                    <p class= "border-bottom text-center"> The Sophia – 16 oz Creek Stone New York Strip | Fingerlings | Haricot Verts 44<br><br>
+                        The Lilly – 8 oz. Creek Stone Filet | Spinach | Fresno Puree 38<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row row-content justify-content-center">
+                <div class="col">
+                    <h2 class= "text-center"><strong>A La Carte</strong></h2>
+                    <p class= "text-center"> Fingerlings | 12<br><br>
+                                            Creamed Spinach | 14<br><br>
+                                            Haricot Verts | 12<br><br>
+                                            French Fries | 10<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+            
+
+    
+        <footer class = "site-footer border-top">
+            <div class="row align-self-center">
+                <div class="col-2 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                        <a class="btn btn-social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class = "col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-702-545-1234</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> cs@steelhead.com</a>
+                </div>
+            </div>
+        </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
