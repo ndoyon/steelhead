@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-     <!-- Required meta tags always come first -->
+     <!-- meta with viewport for responsive design -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
  
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- stylesheet references for font awesome, google fonts, bootstrap-social, custome css-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -17,10 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
 
     <title>Steelhead</title>
+
 </head>
 
 <body>
 
+    <!-- This is the top of the page with restaurant display -->
     <header class="jumbotron jumbotron-fluid">
         <div class= "container" id="imgContainer">
             <div class = "row row-content">
@@ -31,7 +33,7 @@
         </div>
     </header>
 
-
+    <!-- Navigation bar and feature, including reservation button -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">            
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#steelheadNavbar">
@@ -52,6 +54,7 @@
         </div>
     </nav>
  
+    <!-- Reservation modal for restaurant -->
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -105,7 +108,7 @@
         </div>
     </div>
    
-       
+    <!-- Dining/Food images, currently stock, but can be replaced by actual restaurant photos-->
     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#homeCarousel" data-slide-to="o" class="active"></li>
@@ -141,7 +144,7 @@
                         </button>             
     </div>
 
-
+        <!-- quick main page description of the restaurant values to help with business proposal -->
        <div class="container" id="bodyContainer"> 
             <div class="row row-content justify-content-start">
                 <div class="col-md-6" id="colInfo">
@@ -164,7 +167,7 @@
     
             
 
-    
+    <!-- footer with contact info and links -->
     <footer class = "site-footer border-top">
             <div class="row align-self-center">
                 <div class="col-2 col-sm-2 offset-1">
@@ -188,12 +191,14 @@
                         <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> cs@steelhead.com</a>
                 </div>
             </div>
-        </footer>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
 </body>
 
 </html>
